@@ -18,9 +18,9 @@ The analysis explores customer segments and their purchasing patterns to identif
 # Dataset
 The project utilizes two main datasets:
 
-# QVI_purchase_behaviour.csv: Contains customer information, including loyalty card numbers, life stages, and premium statuses.
+1.QVI_purchase_behaviour.csv: Contains customer information, including loyalty card numbers, life stages, and premium statuses.
 
-# QVI_transaction_data.xlsx: Contains transaction records, including dates, store numbers, product names, quantities, and total sales.
+2. QVI_transaction_data.xlsx: Contains transaction records, including dates, store numbers, product names, quantities, and total sales.
 
 # Key Analysis Steps
 1.Exploratory Data Analysis (EDA):
