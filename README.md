@@ -1,4 +1,4 @@
-# Quantium Retail Strategy and Analytics - Task 1
+# Quantium Retail Strategy and Analytics 
 This project is part of the Quantium Virtual Internship, focusing on Retail Strategy and Analytics. The primary goal is to analyze customer purchase behavior and transaction data to provide actionable insights for a retail client, specifically focusing on the chips category.
 
 # Table of Contents
