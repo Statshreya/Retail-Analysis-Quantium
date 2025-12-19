@@ -4,7 +4,7 @@ This project is part of the Quantium Virtual Internship, focusing on Retail Stra
 # Table of Contents
 1.Project Overview
 
-Dataset
+2.Dataset
 
 3.Key Analysis Steps
 
