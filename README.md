@@ -42,19 +42,19 @@ To run the analysis locally, ensure you have the following Python libraries inst
 
 
 pip install pandas numpy matplotlib mlxtend sklearn xlrd
-# Pandas & Numpy: For data manipulation and numerical analysis.
+1.Pandas & Numpy: For data manipulation and numerical analysis.
 
-# Matplotlib: For data visualization.
+2. Matplotlib: For data visualization.
 
-# mlxtend: For Market Basket Analysis (Apriori and Association Rules).
+3. mlxtend: For Market Basket Analysis (Apriori and Association Rules).
 
-# Scikit-learn: For data preprocessing.
+4. Scikit-learn: For data preprocessing.
 
 # Insights & Findings
 1.Top Segment: "Mainstream Young Singles/Couples" and "Mainstream Midage Singles/Couples" are significant contributors to sales.
 
 2.Brand Preference: Kettle chips are consistently popular across most segments.
 
-Packet Size: The 175g packet size is the most frequently purchased across many customer segments.
+3.Packet Size: The 175g packet size is the most frequently purchased across many customer segments.
 
 Product Placement Strategy: Specific brands like Tyrells and Twisties show higher affinity with Mainstream Young Singles/Couples, suggesting they should be placed near high-traffic brands like Kettle to increase visibility and sales.
