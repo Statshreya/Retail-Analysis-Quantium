@@ -1,60 +1,71 @@
-# Quantium Retail Strategy and Analytics 
-This project is part of the Quantium Virtual Internship, focusing on Retail Strategy and Analytics. The primary goal is to analyze customer purchase behavior and transaction data to provide actionable insights for a retail client, specifically focusing on the chips category.
+# Quantium Retail Strategy and Analytics - Data Analytics Project
 
-# Table of Contents
-1.Project Overview
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Library-Pandas-orange.svg)](https://pandas.pydata.org/)
+[![Statistical Analysis](https://img.shields.io/badge/Focus-Statistical%20Analysis-green.svg)]()
 
-2.Dataset
+## 📌 Project Overview
+This project was completed as part of the **Quantium Virtual Internship**. It simulates a real-world retail consulting engagement where I acted as a Data Analyst to provide insights into customer segments and evaluate the success of store trials for a large supermarket client.
 
-3.Key Analysis Steps
+The analysis is split into two core tasks:
+1. **Task 1: Customer Insights & Segmentation** - Identifying "Who" is buying and "What" their preferences are.
+2. **Task 2: Experimentation & Store Trial Analysis** - Testing "If" store layout changes actually increased sales.
 
-4.Installation & Tools
+---
 
-5.Insights & Findings
+## 📊 Task 1: Customer Insights & Segmentation
+**Goal:** Examine transaction data to identify high-value customer segments and chip purchasing patterns.
 
-# Project Overview
-The analysis explores customer segments and their purchasing patterns to identify which segments contribute most to chip sales and how their preferences differ. This involved extensive data cleaning, exploratory data analysis (EDA), and customer segmentation.
+### Methodology:
+- **Data Cleaning:** Handled Excel date formats, removed non-chip products (salsa), and extracted weights/brands from text descriptions.
+- **Outlier Removal:** Filtered out bulk-buying commercial customers to focus on general retail behavior.
+- **Metric Analysis:** Calculated Total Sales, Customer Counts, and Average Transactions per segment.
+- **Market Basket Analysis:** Applied the **Apriori Algorithm** to find brand affinities.
 
-# Dataset
-The project utilizes two main datasets:
-
-1.QVI_purchase_behaviour.csv: Contains customer information, including loyalty card numbers, life stages, and premium statuses.
-
-2. QVI_transaction_data.xlsx: Contains transaction records, including dates, store numbers, product names, quantities, and total sales.
-
-# Key Analysis Steps
-1.Exploratory Data Analysis (EDA):
-
-Converted date formats and cleaned product names.
-
-Filtered the dataset to focus exclusively on chip products (removing salsa dips).
-
-Identified and removed outliers, such as a customer making unusually large commercial-sized purchases.
-
-2.Data Merging: Combined transaction and customer data to create a unified dataset for segment-based analysis.
-
-3.Metrics Calculation: Analyzed total sales, number of customers, and average transactions per customer across different segments (e.g., "Mainstream Young Singles/Couples").
-
-4.Market Basket Analysis: Used the Apriori algorithm and association rules to find product affinities within specific customer segments.
-
-# Installation & Tools
-To run the analysis locally, ensure you have the following Python libraries installed:
+### Key Insights:
+- **Primary Segment:** "Mainstream Young Singles/Couples" and "Mainstream Midage Singles/Couples" are the biggest drivers of sales.
+- **Affinity:** Mainstream Young Singles/Couples are **23% more likely** to purchase Kettle chips and show a strong preference for 175g packets.
+- **Recommendation:** Increase visibility of niche brands like *Tyrells* by placing them near high-traffic *Kettle* products to target the "Mainstream" demographic.
 
 
-pip install pandas numpy matplotlib mlxtend sklearn xlrd
-1.Pandas & Numpy: For data manipulation and numerical analysis.
 
-2. Matplotlib: For data visualization.
+---
 
-3. mlxtend: For Market Basket Analysis (Apriori and Association Rules).
+## 🧪 Task 2: Experimentation & Store Trial Analysis
+**Goal:** Evaluate the impact of new store layouts in Trial Stores 77, 86, and 88 by comparing them against matched Control Stores.
 
-4. Scikit-learn: For data preprocessing.
+### Methodology:
+- **Control Store Selection:** Used correlation and magnitude distance metrics to find stores with similar sales volume and customer traffic during the pre-trial period.
+- **Hypothesis Testing:** Conducted **Independent T-Tests** to compare trial month performance against the control stores.
+- **Assessment:** Measured the percentage change in Revenue and Customer Counts.
 
-# Insights & Findings
-1.Top Segment: "Mainstream Young Singles/Couples" and "Mainstream Midage Singles/Couples" are significant contributors to sales.
+### Key Findings:
+- **Success:** Stores **77** and **86** saw a statistically significant increase in both sales and customers during the trial.
+- **Inconclusive:** Store **88** did not show a consistent significant uplift, suggesting potential differences in implementation or local store factors.
+- **Conclusion:** The trial was successful overall, and a rollout of the new layout is recommended based on the performance of stores 77 and 86.
 
-2.Brand Preference: Kettle chips are consistently popular across most segments.
 
-3.Packet Size: The 175g packet size is the most frequently purchased across many customer segments.
 
-Product Placement Strategy: Specific brands like Tyrells and Twisties show higher affinity with Mainstream Young Singles/Couples, suggesting they should be placed near high-traffic brands like Kettle to increase visibility and sales.
+---
+
+## 🛠️ Tech Stack & Libraries
+- **Language:** Python
+- **Data Manipulation:** `pandas`, `numpy`
+- **Visualization:** `matplotlib`, `seaborn`
+- **Statistics:** `scipy.stats` (T-Tests)
+- **Association Rules:** `mlxtend` (Apriori & Association Rules)
+
+---
+
+## 📂 File Structure
+- `QVI_task1.ipynb`: Notebook for data cleaning and segmentation analysis.
+- `QVI_task2.ipynb`: Notebook for control store matching and trial evaluation.
+- `QVI_transaction_data.xlsx`: Raw transaction records.
+- `QVI_purchase_behaviour.csv`: Customer segment metadata.
+
+---
+
+## 🚀 How to Run
+1. Clone the repo:
+   ```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
